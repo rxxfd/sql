@@ -8,13 +8,13 @@ create table activity(
   holdTime date NOT NULL,
   id int(11) NOT NULL UNIQUE,
   limits int(11) NOT NULL,
-  lname varchar(255) NOT NULL,
-  nane varchar(255) NOT NULL,
-  ooid int(11) NOT NULL,
+  lname varchar(255),
+  name varchar(255) NOT NULL,
+  oid int(11) NOT NULL,
   oname varchar(255) NOT NULL,
   pubtime date NOT NULL,
   PRIMARY KEY(id)
-) ENGINE = InnoDB DEFULT CHARSET = utf8;
+);
 
 create table studeng( 
   id int(11) NOT NULL NUIQUE,
@@ -24,4 +24,4 @@ create table studeng(
   phone varchar(255) NOT NULL,
   address varchar(244) NOT NULL,
   PRIMARY KRY(id)
-)
+)；
